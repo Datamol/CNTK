@@ -581,11 +581,12 @@ CNTKLIBRARY_CPP_EVAL_EXAMPLES:=$(BINDIR)/CNTKLibraryCPPEvalExamples
 
 #ifdef CUDA_PATH
 CNTKLIBRARY_CPP_EVAL_EXAMPLES_SRC=\
-	$(SOURCEDIR)/../Examples/Evaluation/CNTKLibraryCPPEvalCPUOnlyExamples/CNTKLibraryCPPEvalCPUOnlyExamples.cpp  \
+	$(SOURCEDIR)/../Examples/Evaluation/CNTKLibraryCPPEvalGPUExamples/CNTKLibraryCPPEvalGPUExamples.cpp  \
 	$(SOURCEDIR)/../Examples/Evaluation/CNTKLibraryCPPEvalCPUOnlyExamples/EvalMultithreads.cpp
+
 #else
 CNTKLIBRARY_CPP_EVAL_EXAMPLES_SRC=\
-	$(SOURCEDIR)/../Examples/Evaluation/CNTKLibraryCPPEvalGPUExamples/CNTKLibraryCPPEvalGPUExamples.cpp  \
+	$(SOURCEDIR)/../Examples/Evaluation/CNTKLibraryCPPEvalCPUOnlyExamples/CNTKLibraryCPPEvalCPUOnlyExamples.cpp  \
 	$(SOURCEDIR)/../Examples/Evaluation/CNTKLibraryCPPEvalCPUOnlyExamples/EvalMultithreads.cpp
 #endif
 
